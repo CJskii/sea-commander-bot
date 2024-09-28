@@ -1,19 +1,25 @@
 {
   "name": "nodejs-ts-template",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsx ./src/index.ts",
-    "start": "node dist/index.js"
-  },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
+  "main": "dist/index.js",
   "devDependencies": {
     "@types/node": "^20.4.5",
     "tsx": "^3.12.7",
-    "typescript": "^5.1.6"
+    "typescript": "^5.6.2"
+  },
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx ./src/index.ts",
+    "start": "tsc && node dist/index.js"
+  },
+  "dependencies": {
+    "@types/node-telegram-bot-api": "^0.64.7",
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0",
+    "txs": "^1.0.0"
   }
 }
